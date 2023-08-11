@@ -2,7 +2,7 @@ import React,{createContext,useState} from 'react'
 import { PRODUCTS } from '../Products';
 import Cart from '../Pages/Cart/Cart';
 
-export const shopContext = createContext(null)
+export const ShopContext = createContext(null)
 
 const getCart = () => {
     let cart ={};
@@ -13,7 +13,7 @@ const getCart = () => {
     return Cart;
 }
 
-const ShopContext = (props) => {
+const ShopContextProvider = (props) => {
     const [items,setItems] = useState(getCart())
 
 
@@ -26,10 +26,10 @@ const ShopContext = (props) => {
 
     }
     const context = {items, addToCart, removeFromCart}
-    console.log(items)
+    
   return (
-    <shopContext.Provider value={context}>{props.children}</shopContext.Provider>
+    <ShopContext.Provider value={context}>{props.children}</ShopContext.Provider>
   )
 }
 
-export default ShopContext
+export default ShopContextProvider
