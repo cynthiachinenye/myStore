@@ -13,7 +13,7 @@ const Cart = () => {
          <h1>Your Cart Items</h1>
       </div>
 
-       <div className="items">
+       <div className="cartitems">
          { PRODUCTS.map((product) => {
           if (items[product.id] !== 0){
             return <CartItem data={product}/>
