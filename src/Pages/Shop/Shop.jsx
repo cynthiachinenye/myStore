@@ -7,7 +7,7 @@ const Shop = () => {
   return (
     <div className="Shop">
       <div className="shopTitle">
-        <h1>Cyndy's Store</h1>
+        <h1>Cyndy-Meng's Store</h1>
       </div>
       <div className="products">{PRODUCTS.map((product) => <Product data={product}/>)}</div>
 

@@ -7,10 +7,10 @@ export const ShopContext = createContext(null)
 const getCart = () => {
     let cart ={};
     for (let i =1; i <PRODUCTS.length + 1; i++){
-        Cart[i] = 0;
+        cart[i] = 0;
 
     }
-    return Cart;
+    return cart;
 }
 
 const ShopContextProvider = (props) => {
@@ -26,7 +26,7 @@ const ShopContextProvider = (props) => {
 
     }
     const context = {items, addToCart, removeFromCart}
-    
+   
   return (
     <ShopContext.Provider value={context}>{props.children}</ShopContext.Provider>
   )
