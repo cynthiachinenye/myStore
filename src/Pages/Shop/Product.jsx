@@ -5,8 +5,7 @@ const Product = (props) => {
     const {addToCart,items} = useContext(ShopContext)
     const {id, productName, price,productImage} = props.data;
 
-    console.log(items)
-    const cartItemAmount = items[productName]
+    const cartItemAmount = items[id]
  
   return (
     <div className="product">
@@ -21,7 +20,7 @@ const Product = (props) => {
         </div>
         <button className="btn" onClick={() =>addToCart(id)}>
           Add To Cart
-          { cartItemAmount > 0 && ({cartItemAmount})}
+          {cartItemAmount > 0  &&  <> ({cartItemAmount})</>}
           </button>
     </div>
   )
