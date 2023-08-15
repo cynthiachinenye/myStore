@@ -15,7 +15,9 @@
     box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.2);
     display:flex;
     justify-content:column;
-    padding:20px 10px 20px 30px;
+    padding:0px 0px 20px 30px;
+    font-size:25px;
+    line-height:20px;
 }
 .items img{
     width:150px;
