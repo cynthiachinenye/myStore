@@ -8,26 +8,27 @@
 }
 .items{
     width:550px;
-    height:150px;
+    height:180px;
     border:none;
     border-radius:30px;
     margin:30px;
     box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.2);
     display:flex;
     justify-content:column;
-    padding:80px 30px;
+    padding:20px 10px 20px 30px;
 }
 .items img{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
     border:none;
-    border-radius:50px;
-   
-    padding-bottom:25px;
+    border-radius:35px;
+    padding:15px;
    
 }
 .items .p{
     font-size:25px;
+
+   
 }
 .countHandler input{
     width:40px;
