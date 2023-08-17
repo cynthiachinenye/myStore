@@ -23,7 +23,7 @@ const Product = (props) => {
           {cartItemAmount > 0  &&  <> ({cartItemAmount})</>}
           </button>
     </div>
-  )
+ )
 }
           
 
